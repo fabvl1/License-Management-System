@@ -2,7 +2,6 @@ package visual.EntityPanels;
 
 import model.Violation;
 import services.ViolationService;
-import visual.Buttons.NewLicenseButton;
 import visual.Buttons.NewViolationButton;
 
 import javax.swing.*;

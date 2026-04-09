@@ -3,7 +3,6 @@ package visual.EntityPanels;
 import model.Driver;
 import services.DriverService;
 import visual.Buttons.NewDriverButton;
-import visual.Buttons.NewViolationButton;
 
 import javax.swing.*;
 import java.awt.*;

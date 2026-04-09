@@ -1,12 +1,8 @@
 package report_models;
 
-import java.awt.*;
-import java.util.ArrayList;
 import java.util.List;
 
 import visual.Reports.ConsolidatedInfractionsReport.ConsolidatedRow;
-
-import javax.swing.*;
 
 public class ConsolidatedInfractionsReportModel {
 

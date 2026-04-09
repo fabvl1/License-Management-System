@@ -1,6 +1,5 @@
 package visual.EntityPanels;
 
-import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
@@ -8,7 +7,6 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
-import java.util.List;
 
 import model.User;
 import services.UserService;

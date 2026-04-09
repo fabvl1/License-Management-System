@@ -11,7 +11,6 @@ import model.Driver;
 import services.LicenseService;
 import services.DriverService;
 
-import static report_models.InfractionsInPeriodReportModel.saveInfractionsInPeriod;
 import static report_models.LicensesIssuedReportModel.saveLicensesIssuedReport;
 import static report_models.SaveLocation.askSaveLocation;
 

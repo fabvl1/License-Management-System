@@ -1,49 +1,55 @@
-# Drivers License Management System  
+# Drivers License Management System
 
-A database system for managing driver's licenses, exams, and traffic violations.  
+Desktop Java application to manage driver's licenses, exams, centers, users, and traffic violations.
 
-## Project Overview  
-This project is a Driver's License Management System designed for a licensing center to efficiently handle:  
-- Driver information (personal data, license status)  
-- License issuance & renewals (types, expiration dates, restrictions)  
-- Exams (theoretical, practical, medical)  
-- Traffic violations (fines, points deducted, payment status)  
-- Reports & analytics (license expirations, violation trends)  
+## Overview
+This project is focused on licensing center operations:
+- Driver management
+- License issuance and expiration tracking
+- Exam registration and results
+- Traffic violations and penalties
+- Administrative reports (PDF)
 
-Built with PostgreSQL for database design and Java for application logic.  
+It uses Java (Swing) for the UI/business logic and PostgreSQL as the data store.
 
----
+## Tech Stack
+- Java 17
+- Swing (desktop UI)
+- PostgreSQL JDBC driver
+- iText PDF
+- FlatLaf
+- jDatePicker
 
-## Key Features  
-- CRUD Operations - Add, update, and delete drivers, licenses, exams, and violations.  
-- Automated Workflows - License status updates, point deductions for violations.  
-- Exam Tracking - Link exams to drivers and external entities (clinics/driving schools).  
-- Reporting - Generate PDF/Excel reports on licenses, violations, and pending renewals.  
-- User Roles - Admin, License Manager, Examiner, and Citizen access levels.  
+## Project Layout
+- `src/`: Java source code
+- `src/libs/`: third-party JAR dependencies
+- `icons/`: additional assets
+- `bin/`: build output (ignored by git)
 
----
+## Requirements
+- JDK 17+
+- PostgreSQL server
 
-## Database Schema  
-The system follows a 3NF (Third Normal Form) relational database design.  
+## Run In VS Code
+1. Open this folder in VS Code.
+2. Ensure Java extension pack is installed.
+3. Use JDK 17 in the workspace.
+4. Run main class: `model.Main`.
 
-Main Entities:  
-- Drivers - Personal details, license status.  
-- Licenses - Type, issue/expiry dates, restrictions.  
-- Exams - Theory, practical, medical tests.  
-- Violations - Type, date, penalty points, payment status.  
-- External Entities - Clinics & driving schools.  
+## Run From Terminal (Windows PowerShell)
+Compile:
+```powershell
+javac -cp "src/libs/*" -d bin @(Get-ChildItem -Recurse -Path src -Filter *.java | ForEach-Object { $_.FullName })
+```
 
-ER Diagram:  
+Run:
+```powershell
+java -cp "bin;src/libs/*" model.Main
+```
+
+## Notes
+- Generated reports are written to `reports/`.
+- Build artifacts under `bin/` are not intended to be committed.
+
+## ER Diagram
 https://i.imgur.com/uWKGbZK.jpeg
---- 
-
-## Project Structure  
-//
-
-## Contributing  
-Open to contributions!  
-1. Fork the repository.  
-2. Create a new branch (git checkout -b feature/your-feature).  
-3. Commit changes (git commit -m 'Add feature').  
-4. Push to the branch (git push origin feature/your-feature).  
-5. Open a Pull Request.  

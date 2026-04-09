@@ -22,7 +22,6 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.EmptyBorder;
 
 import com.formdev.flatlaf.FlatDarkLaf;
@@ -30,7 +29,6 @@ import com.formdev.flatlaf.FlatLightLaf;
 
 import model.User;
 import services.UserService;
-import utils.Validation;
 import visual.Buttons.ModernButton;
 import visual_utils.AvatarCircular;
 import visual_utils.ImagePanel;
@@ -50,7 +48,6 @@ public class AddRol extends JFrame {
     private JTextField textField_3;
     private JPasswordField passwordField_3;
     private JLayeredPane paneles;
-    private Validation validation;
     private UserService userService;
 
     /**
@@ -75,7 +72,6 @@ public class AddRol extends JFrame {
      */
     public AddRol() {
     	FlatDarkLaf.setup();
-		validation = new Validation();
 		userService = new UserService();
     	setTitle("ADD-ROL");
     	setResizable(false);

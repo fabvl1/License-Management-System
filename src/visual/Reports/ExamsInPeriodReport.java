@@ -14,7 +14,6 @@ import services.ExamService;
 import services.DriverService;
 import services.AssociatedEntityService;
 
-import static report_models.EntityInfoReportModel.saveEntityInfoReport;
 import static report_models.ExamsInPeriodReportModel.saveExamsInPeriod;
 import static report_models.SaveLocation.askSaveLocation;
 

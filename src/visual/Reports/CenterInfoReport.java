@@ -2,13 +2,7 @@ package visual.Reports;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.FileOutputStream;
 import java.util.List;
-
-import com.itextpdf.text.Document;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.pdf.PdfDocument;
-import com.itextpdf.text.pdf.PdfWriter;
 import model.Center;
 import services.CenterService;
 

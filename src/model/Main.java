@@ -1,15 +1,10 @@
 package model;
 
-import java.util.List;
-
 import javax.swing.SwingUtilities;
-
 import javax.swing.UIManager;
 
 import com.formdev.flatlaf.FlatLightLaf;
 
-import services.UserService;
-import visual.AddRol;
 import visual.TrafficLightCarAnimation;
 
 public class Main {

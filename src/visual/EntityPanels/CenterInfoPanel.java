@@ -1,4 +1,4 @@
-package visual;
+package visual.EntityPanels;
 
 import javax.swing.*;
 import java.awt.*;

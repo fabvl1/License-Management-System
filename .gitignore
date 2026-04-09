@@ -1,0 +1,24 @@
+# Java build output
+bin/
+**/*.class
+
+# Runtime/report artifacts
+reports/
+*.log
+
+# IDE metadata (keep Eclipse project files if needed)
+.settings/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local database backups or dumps
+*.backup
+*.bak
+*.sql
+
+# Temporary files
+*.tmp
+*.swp

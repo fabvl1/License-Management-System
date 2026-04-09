@@ -7,8 +7,6 @@ import java.util.List;
 import model.Driver;
 import model.License;
 import model.Violation;
-import report_models.ConsolidatedInfractionsReportModel;
-import report_models.DriverInfoReportModel;
 import services.DriverService;
 import services.LicenseService;
 import services.ViolationService;

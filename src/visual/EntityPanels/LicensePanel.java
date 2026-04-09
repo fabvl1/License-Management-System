@@ -2,7 +2,6 @@ package visual.EntityPanels;
 
 import model.License;
 import services.LicenseService;
-import visual.Buttons.NewExamenButton;
 import visual.Buttons.NewLicenseButton;
 
 import javax.swing.*;

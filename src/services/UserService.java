@@ -7,10 +7,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import model.Driver;
-import model.Exam;
-import model.License;
-import model.User;
 import model.User;
 import utils.ConnectionManager;
 
@@ -170,13 +166,7 @@ public class UserService implements EntityService<User>  {
         pstmt.setString(2, user.getContra());    
     }
 	
-	private void setUserRParameters(PreparedStatement pstmt, User user) throws SQLException {
-        pstmt.setString(1, user.getNombre());
-        pstmt.setString(2, user.getRol());
-    }
-	
 
-	
 	private void handleSQLException(String message, SQLException e) {
         System.err.println(message + ": " + e.getMessage());
         e.printStackTrace();

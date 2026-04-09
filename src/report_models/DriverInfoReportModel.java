@@ -8,7 +8,6 @@ import model.License;
 import model.Violation;
 
 import java.io.FileOutputStream;
-import java.util.ArrayList;
 import java.util.List;
 
 public class DriverInfoReportModel {

@@ -37,7 +37,6 @@ public class DriverInfoPanel extends JPanel {
      */
     private void showDriverInfoDialog() {
         // Simulación de datos del conductor y sus relaciones.
-        // TODO: Reemplaza esto por búsquedas reales en tu modelo/servicio.
         String nombre = "Juan Pérez";
         String dni = "12345678";
         String direccion = "Av. Siempre Viva 123, Ciudad";

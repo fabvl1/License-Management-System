@@ -6,7 +6,6 @@ import java.util.List;
 import model.AssociatedEntity;
 import services.AssociatedEntityService;
 
-import static report_models.DriverInfoReportModel.saveDriverInfoReport;
 import static report_models.EntityInfoReportModel.saveEntityInfoReport;
 import static report_models.SaveLocation.askSaveLocation;
 

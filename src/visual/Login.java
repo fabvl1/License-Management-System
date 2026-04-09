@@ -1,24 +1,19 @@
 package visual;
 
-import java.awt.CardLayout;
 import java.awt.EventQueue;
 import java.awt.Font;
-import java.awt.GridLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javax.swing.ImageIcon;
-import javax.swing.JLayeredPane;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
-import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
@@ -27,7 +22,6 @@ import com.formdev.flatlaf.FlatDarkLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 
 import services.UserService;
-import utils.Validation;
 import visual.Buttons.ModernButton;
 import visual_utils.ImagePanel;
 import java.awt.event.ActionListener;
@@ -37,16 +31,6 @@ public class Login extends JFrame {
 
     private static final long serialVersionUID = 1L;
     private JPanel contentPane;
-    private JTextField textField;
-    private JPasswordField passwordField;
-    private JTextField textField_1;
-    private JPasswordField passwordField_1;
-    private JTextField textField_2;
-    private JPasswordField passwordField_2;
-    private JTextField textField_3;
-    private JPasswordField passwordField_3;
-    private JLayeredPane paneles;
-    private Validation validation;
 
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
@@ -64,7 +48,6 @@ public class Login extends JFrame {
 
     public Login() {
         FlatDarkLaf.setup();
-        validation = new Validation();
 
         setTitle("Sistema de Gestión de Licencias");
         
@@ -163,7 +146,8 @@ public class Login extends JFrame {
         mdrnbtnAceptar.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
         		UserService usuarios = new UserService();
-        		if(usuarios.autenticar(txtUsuario.getText(),pwdContrasena.getText())) {
+            String password = new String(pwdContrasena.getPassword());
+            if(usuarios.autenticar(txtUsuario.getText(), password)) {
         			String rol =usuarios.getRolPorUsuario(txtUsuario.getText());
         			LicenseManagementUI l = new LicenseManagementUI(rol);
         			l.setVisible(true);

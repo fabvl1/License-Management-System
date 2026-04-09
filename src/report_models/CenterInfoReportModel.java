@@ -5,15 +5,13 @@ import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
 import model.Center;
 
-import javax.swing.*;
-import java.awt.*;
 import java.io.FileOutputStream;
 
 public class CenterInfoReportModel {
     public static void saveCenterToPdf(Center center, String filePath) {
         try {
             Document document = new Document();
-            PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(filePath));
+            PdfWriter.getInstance(document, new FileOutputStream(filePath));
             document.open();
             document.add(new com.itextpdf.text.Paragraph("License Management Center Information Report"));
             document.add(new Paragraph("Center Code: " + center.getCenterCode()));

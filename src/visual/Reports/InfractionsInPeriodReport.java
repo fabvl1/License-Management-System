@@ -13,7 +13,6 @@ import services.ViolationService;
 import services.LicenseService;
 import services.DriverService;
 
-import static report_models.ExpiredLicensesReportModel.saveExpiredLicensesReport;
 import static report_models.InfractionsInPeriodReportModel.saveInfractionsInPeriod;
 import static report_models.SaveLocation.askSaveLocation;
 
